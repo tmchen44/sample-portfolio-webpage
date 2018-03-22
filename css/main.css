@@ -1,0 +1,148 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    max-width: 800px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 20px auto 10px auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/*
+    Header
+*/
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 60px;
+}
+
+.name-title {
+    display: inline-block;
+}
+
+.name-title h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    font-size: 45px;
+    margin: 0;
+}
+
+.name-title h3 {
+    margin: 0px;
+    text-align: right;
+}
+
+hr {
+    border: 0;
+    color: #7d97ad;
+    background-color: #7d97ad;
+    height: 5px;
+    margin: 10px 0 20px 0;
+}
+
+@media screen and (max-width: 650px) {
+    header img {
+        height: 60px;
+    }
+
+    .name-title h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header img {
+        height: 45px;
+    }
+
+    .name-title h1 {
+        font-size: 30px;
+    }
+
+    .name-title h3 {
+        font-size: 15px;
+    }
+}
+
+/*
+    Main content
+*/
+
+main {
+    width: 100%;
+}
+
+main img {
+    width: 100%;
+}
+
+main h2 {
+    color: #7d97ad;
+    font-size: 25px;
+    margin: 20px 0 10px 0;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 30%));
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.project {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.project h3 {
+    font-size: 23px;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    color: #2d3c49;
+}
+
+.project p {
+    font-size: 15px;
+    margin: 0;
+    color: #2d3c49;
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 800px) {
+    .project-list {
+        grid-template-columns: repeat(2, minmax(200px, 45%));
+    }
+}
+
+@media screen and (max-width: 650px) {
+    main h2 {
+        font-size: 23px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .project p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-list {
+        grid-template-columns: minmax(200px, 300px);
+        justify-content: left;
+    }
+}
